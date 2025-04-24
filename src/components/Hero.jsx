@@ -48,7 +48,7 @@ const Hero = () => {
       {/* Background Image with enhanced overlay */}
       <div className="absolute top-0 left-0 w-full h-full">
         <img
-          src="/couple-placeholder.jpg"
+          src="wedding/couple-placeholder.jpg"
           alt="Couple"
           className="object-cover w-full h-full"
         />

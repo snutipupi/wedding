@@ -34,21 +34,21 @@ const Venue = () => {
             >
               <SwiperSlide>
                 <img
-                  src="/venue1.jpg"
+                  src="/wedding/venue1.jpg"
                   alt="Venue 1"
                   className="object-cover w-full h-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="/venue2.jpg"
+                  src="/wedding/venue2.jpg"
                   alt="Venue 2"
                   className="object-cover w-full h-full"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="/venue3.jpg"
+                  src="/wedding/venue3.jpg"
                   alt="Venue 3"
                   className="object-cover w-full h-full"
                 />
