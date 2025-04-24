@@ -11,8 +11,8 @@ const DressCode = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-secondary" >
+      <div className="container px-4 mx-auto" id="dresscode">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,19 +20,19 @@ const DressCode = () => {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-4xl font-cormorant text-primary mb-8">
+          <h2 className="mb-8 text-4xl font-cormorant text-primary">
             {translations.dressCode}
           </h2>
-          <div className="bg-white p-8 rounded-lg shadow-xl">
-            <h3 className="text-2xl font-cormorant text-accent mb-6">
+          <div className="p-8 bg-white rounded-lg shadow-xl">
+            <h3 className="mb-6 text-2xl font-cormorant text-accent">
               {translations.dressCodeTitle}
             </h3>
             
-            <p className="text-lg text-accent/80 font-montserrat mb-8">
+            <p className="mb-8 text-lg text-accent/80 font-montserrat">
               {translations.dressCodeDescription}
             </p>
 
-            <div className="text-left mb-12">
+            <div className="mb-12 text-left">
               {translations.dressCodeSuggestions.split('\\n').map((line, i) => (
                 <p key={i} className="mb-2 text-accent/80 font-montserrat">
                   {line}
@@ -40,8 +40,8 @@ const DressCode = () => {
               ))}
             </div>
 
-            <div className="border-t border-primary/10 pt-8">
-              <h4 className="text-xl font-cormorant text-accent mb-4">
+            <div className="pt-8 border-t border-primary/10">
+              <h4 className="mb-4 text-xl font-cormorant text-accent">
                 {translations.forbiddenColors}
               </h4>
               <div className="flex justify-center gap-4">

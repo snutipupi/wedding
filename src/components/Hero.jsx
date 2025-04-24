@@ -11,21 +11,21 @@ const Hero = () => {
   ];
 
   return (
-    <section className="h-screen w-full relative">
+    <section className="relative w-full h-screen">
       {/* Navigation Menu */}
       <div className="absolute top-0 left-0 right-0 z-20 bg-gradient-to-b from-black/50 to-transparent">
-        <nav className="flex items-center py-4 px-6">
+        <nav className="flex items-center px-6 py-4">
           <div className="w-20">
-            {/* Logo or empty space */}
+            
           </div>
           
-          <div className="flex-1 flex justify-center">
+          <div className="flex justify-center flex-1">
             <ul className="flex items-center gap-5">
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <a
                     href={item.href}
-                    className="text-white/90 hover:text-white font-cormorant text-sm uppercase tracking-wider transition-colors whitespace-nowrap drop-shadow-md"
+                    className="text-sm tracking-wider uppercase transition-colors text-white/90 hover:text-white font-cormorant whitespace-nowrap drop-shadow-md"
                   >
                     {item.title}
                   </a>
@@ -34,7 +34,7 @@ const Hero = () => {
             </ul>
           </div>
 
-          <div className="w-20 flex justify-end">
+          <div className="flex justify-end w-20">
             <button
               onClick={toggleLanguage}
               className="px-3 py-1.5 text-white/90 hover:text-white font-cormorant text-sm uppercase tracking-wide border border-white/20 hover:border-white/40 rounded transition-colors drop-shadow-md"
@@ -50,13 +50,13 @@ const Hero = () => {
         <img
           src="/couple-placeholder.jpg"
           alt="Couple"
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center">
+      <div className="relative z-10 flex items-center justify-center h-full">
         <div className="px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
